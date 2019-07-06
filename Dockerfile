@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install wget \
     libyaml-libyaml-perl -y && \
     rm -rf /var/lib/apt/list/*
 RUN wget https://ftp.otrs.org/pub/otrs/otrs-6.0.19.tar.gz --directory-prefix=/tmp && \
-    tar xzf /tmp/o  trs-6.0.19.tar.gz --directory=/opt/ && \
+    tar xzf /tmp/otrs-6.0.19.tar.gz --directory=/opt/ && \
     rm -rf tmp/otrs* && \
     mv /opt/otrs*/ /opt/otrs/
 RUN perl -MCPAN -e shell
